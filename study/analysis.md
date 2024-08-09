@@ -12,7 +12,7 @@ The Huion Kamvas Pro 16 sends data packets to the computer like this:
 - **Byte 1**: type of data: button `0xe0`, touch-bar `0xf0`, stylus position without pressure `0x80`, stylus position with pressure information `0x81`
 ### Modes
 #### Button [0xe0]
-When you're in button mode (byte 1 == `0xe0`), **Byte 2** and **Byte 3* will always be the same (0x0101).  
+When you're in button mode (**Byte 1** == `0xe0`), **Byte 2** and **Byte 3** will always be the same (`0x0101`).  
 **Byte 4** will be used to determine which button is pressed
 | Button name* | Byte value (in hexadecimal) |
 |--------------|-----------------------------|
